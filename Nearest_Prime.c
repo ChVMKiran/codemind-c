@@ -4,6 +4,7 @@ int main(){
     scanf("%d",&t);
     for(i=1;i<=t;i++){
         scanf("%d",&n);
+        b=n;
         for(j=n;j<=10000;j++){
             c=0;
             for(k=2;k<j;k++){
@@ -36,11 +37,13 @@ int main(){
         }
         else if(b==2)
        {
-           printf("3");
+           printf("3
+");
        }
        else if(b==1)
        {
-           printf("2");
+           printf("2
+");
        }
         else{
             printf("%d
