@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main(){
+    int n,lp,hp,i,j,c;
+    scanf("%d",&n);
+    for(i=n;;i++){
+        c=0;
+        for(j=2;j<i;j++){
+            if(i%j==0){
+                c++;
+                break;
+            }
+        }
+        if(c==0){
+            hp=i;
+            break;
+        }
+    }
+    for(i=n;;i--){
+        c=0;
+        for(j=2;j<i;j++){
+            if(i%j==0){
+                c++;
+                break;
+            }
+        }
+        if(c==0){
+            lp=i;
+            break;
+        }
+    }
+    if(n-lp<=hp-n){
+        printf("%d",n-lp);
+    }
+    else{
+        printf("%d",hp-n);
+    }
+}
