@@ -1,19 +1,22 @@
 #include<stdio.h>
 int main(){
-    int n,i,s=o;
-    scanf("%d",&n);
-    while(n!=0 &&(n!=1 || n!=7)){
-        i=n;
-        while(i!=0){
-            s+=i%10*i%10;
-            i/=10;
-        }
-        s=n;
-    }
-    if(n==1||n==7){
-        printf("True");
-    }
-    else{
-        printf("False");
-    }
+ int i,j,n,t,s=0;
+ scanf("%d",&n);
+ s=n;
+  while(s>9){
+   s=0;
+   while(n>0){
+    j=n%10;
+    s+=(j*j);
+    n=n/10; 
+  }
+  n=s;
+  }
+  
+ if(s==1||s==7){
+     printf("True");
+}
+else{
+     printf("False");
+}
 }
