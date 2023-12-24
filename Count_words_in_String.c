@@ -1,13 +1,18 @@
 #include<stdio.h>
-int main(){
-    char s[1000];
-    int wc=1,i;
+int main()
+{
+    int i,a=1;
+    char ch[1000];
     scanf("%[^
-]",s);
-    for(i=0;s[i]!=NULL;i++){
-        if(s[i]==' '){
-            wc++;
+]",&ch);
+    for(i=0;ch[i]!=NULL;i++)
+    {
+        if(ch[i]==' ')
+        {
+            a++;
+            continue;
         }
+        
     }
-    printf("%d",wc);
+    printf("%d",a);
 }
