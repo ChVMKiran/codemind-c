@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
-    int x,y,z;
-    scanf("%d%d",&x,&y);
-    z=2*x-y;
-    printf("%d",z);
+    int a,b,c;
+    scanf("%d%d",&c,&b);
+    a=2*c-b;
+    printf("%d",a);
 }
